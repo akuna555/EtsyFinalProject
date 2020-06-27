@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestNG.HybridLoginTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 53.214 sec <<< FAILURE!
+AccountTest(TestNG.HybridLoginTest)  Time elapsed: 9.113 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.fail(Assert.java:103)
+	at etsy.engine.WebOperation.perform(WebOperation.java:105)
+	at TestNG.HybridLoginTest.AccountTest(HybridLoginTest.java:81)

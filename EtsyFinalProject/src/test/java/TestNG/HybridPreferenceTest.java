@@ -44,7 +44,7 @@ public class HybridPreferenceTest {
 
     @BeforeTest
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "C:\\Data\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Vitali\\Documents\\selenium dependencies\\drivers\\chromedriver.exe");
         String reportName = new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new Date());
         htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "\\Report\\"+reportName+".html");
         extent = new ExtentReports();

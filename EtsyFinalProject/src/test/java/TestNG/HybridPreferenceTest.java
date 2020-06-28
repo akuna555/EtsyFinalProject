@@ -44,7 +44,7 @@ public class HybridPreferenceTest {
 
     @BeforeTest
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Vitali\\Documents\\selenium dependencies\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.gecko.driver", "C:\\Users\\Vitali\\Documents\\selenium dependencies\\drivers\\geckodriver.exe");
         String reportName = new SimpleDateFormat("yyyy.mm.dd.hh.mm.ss").format(new Date());
         htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "\\Report\\"+reportName+".html");
         extent = new ExtentReports();
@@ -71,7 +71,7 @@ public class HybridPreferenceTest {
 
                 String testCaseName = row.getCell(0).toString();
 
-                webdriver = new ChromeDriver();
+                webdriver = new FirefoxDriver();
                 webdriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                 test = extent.createTest(testCaseName);
                 operation = new WebOperation(webdriver, htmlReporter, extent, test);

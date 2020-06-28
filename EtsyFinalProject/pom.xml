@@ -31,14 +31,6 @@
             <artifactId>selenium-java</artifactId>
             <version>2.53.0</version>
         </dependency>
-        <plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-surefire-plugin</artifactId>
-		    <version>2.19.1</version>
-			<configuration>
-    		<testFailureIgnore>true</testFailureIgnore>
-			</configuration>
-		</plugin>
         
           <dependency>
             <groupId>com.aventstack</groupId>
@@ -60,6 +52,16 @@
         </dependency>
         
     </dependencies>
+	
+	<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+		    <version>2.19.1</version>
+			<configuration>
+    		<testFailureIgnore>true</testFailureIgnore>
+			</configuration>
+		</plugin>
+        
     
     <pluginRepositories>
         <pluginRepository>
